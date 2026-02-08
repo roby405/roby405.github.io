@@ -1,5 +1,5 @@
 "Front","Back"
-"Legile de conservare în mecanica clasică","### Simboluri utilizate
+"Legile de conservare în mecanica clasică (inclusiv conservarea energiei)","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
 |---|---|---|
@@ -15,7 +15,7 @@
 | $U$ | Energia potențială | J (Joule) |
 | $L$ | Lagrangianul | J (Joule) |
 | $H$ | Hamiltonianul | J (Joule) |
-| $q_i$ | Coordonate generalizate | depinde de caz |"
+| $q_i$ | Coordonate generalizate | depinde de caz | [cite:page:4:p4]"
 "Oscilatorul armonic (simplu/neamortizat și energia acestuia)","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -30,7 +30,7 @@
 | $m$ | Masa | kg |
 | $E_c$ | Energia cinetică | J (Joule) |
 | $E_p$ | Energia potențială | J (Joule) |
-| $v$ | Viteza | m/s |"
+| $v$ | Viteza | m/s | [cite:page:6:p6]"
 "Oscilatorul amortizat (inclusiv amortizat în fluid)","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -45,7 +45,7 @@
 | $A_0$ | Amplitudinea inițială | m |
 | $k$ | Constanta elastică | N/m |
 | $m$ | Masa | kg |
-| $P_r$ | Puterea disipată | W (Watt) |"
+| $P_r$ | Puterea disipată | W (Watt) | [cite:page:7:p7]"
 "Oscilatorul forțat (inclusiv rezonanța de amplitudine, viteză și putere)","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -59,7 +59,7 @@
 | $\delta$ | Defazajul | rad |
 | $Q$ | Factorul de calitate | adimensional |
 | $\Delta \omega$ | Lărgimea benzii | rad/s |
-| $m$ | Masa | kg |"
+| $m$ | Masa | kg | [cite:page:9:p9]"
 "Oscilatorul cuplat / dublu (elastic)","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -71,8 +71,8 @@
 | $\omega_s$ | Pulsația modului simetric | rad/s |
 | $\omega_d$ | Pulsația modului antisimetric | rad/s |
 | $S, D$ | Amplitudinile modurilor normale | m |
-| $\varphi_s, \varphi_d$ | Fazele inițiale | rad |"
-"Oscilatorul LC / RLC (inclusiv comparația RLC cu oscilatorul mecanic)","### Simboluri utilizate
+| $\varphi_s, \varphi_d$ | Fazele inițiale | rad | [cite:page:10:p10]"
+"Oscilatorul LC / RLC (inclusiv comparația RLC cu oscilatorul mecanic si rezonanta de amplitudine, viteza si putere)","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
 |---|---|---|
@@ -85,7 +85,7 @@
 | $\gamma$ | Factorul de amortizare | s⁻¹ |
 | $Z$ | Impedanța | Ω (Ohm) |
 | $I_{ef}$ | Curentul eficace | A |
-| $U_{ef}$ | Tensiunea eficace | V (Volt) |"
+| $U_{ef}$ | Tensiunea eficace | V (Volt) | [cite:page:11:p11]"
 "Legea lui Fourier","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -95,7 +95,7 @@
 | $T$ | Temperatura | K (Kelvin) |
 | $\nabla T$ | Gradientul de temperatură | K/m |
 | $\Phi_Q$ | Fluxul termic total | W (Watt) |
-| $S$ | Suprafața | m² |"
+| $S$ | Suprafața | m² | [cite:page:14:p4]"
 "Ecuația căldurii (deducere, soluția 1D, cazul omogen)","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -108,7 +108,7 @@
 | $\vec{j}_Q$ | Densitatea fluxului termic | W/m² |
 | $Q$ | Căldura | J (Joule) |
 | $V$ | Volumul | m³ |
-| $L$ | Lungimea barei | m |"
+| $L$ | Lungimea barei | m | [cite:page:15:p4]"
 "Ecuațiile lui Maxwell (formă, discuție)","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -121,7 +121,7 @@
 | $\rho_v$ | Densitatea volumică de sarcină | C/m³ |
 | $\varepsilon$ | Permitivitatea | F/m |
 | $\mu$ | Permeabilitatea | H/m |
-| $Q_{int}$ | Sarcina electrică interioară | C (Coulomb) |"
+| $Q_{int}$ | Sarcina electrică interioară | C (Coulomb) | [cite:page:16:p4]"
 "Legea lui Coulomb","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -131,7 +131,7 @@
 | $r$ | Distanța dintre sarcini | m (metru) |
 | $\hat{r}$ | Versorul direcției | adimensional |
 | $\varepsilon_0$ | Permitivitatea vidului | F/m |
-| $\vec{E}$ | Intensitatea câmpului electric | V/m |"
+| $\vec{E}$ | Intensitatea câmpului electric | V/m | [cite:page:17:p4]"
 "Legea lui Faraday","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -141,7 +141,7 @@
 | $\vec{B}$ | Inducția magnetică | T (Tesla) |
 | $\vec{E}$ | Intensitatea câmpului electric | V/m |
 | $S$ | Suprafața | m² |
-| $\Gamma$ | Conturul închis | m |"
+| $\Gamma$ | Conturul închis | m | [cite:page:18:p4]"
 "Legea lui Gauss (câmp electric și magnetic)","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -152,7 +152,7 @@
 | $Q_{int}$ | Sarcina electrică interioară | C (Coulomb) |
 | $\rho_v$ | Densitatea volumică de sarcină | C/m³ |
 | $\varepsilon_0$ | Permitivitatea vidului | F/m |
-| $\Sigma$ | Suprafața închisă | m² |"
+| $\Sigma$ | Suprafața închisă | m² | [cite:page:19:p4]"
 "Forța Lorentz","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -164,7 +164,7 @@
 | $\vec{B}$ | Inducția magnetică | T (Tesla) |
 | $r$ | Raza de ciclotron | m |
 | $\omega_c$ | Pulsația de ciclotron | rad/s |
-| $m$ | Masa particulei | kg |"
+| $m$ | Masa particulei | kg | [cite:page:20:p4]"
 "Vectorul Poynting","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -175,7 +175,7 @@
 | $w$ | Densitatea de energie EM | J/m³ |
 | $\vec{D}$ | Inducția electrică | C/m² |
 | $\vec{B}$ | Inducția magnetică | T (Tesla) |
-| $\vec{j}$ | Densitatea curentului | A/m² |"
+| $\vec{j}$ | Densitatea curentului | A/m² | [cite:page:21:p4]"
 "Energia și intensitatea câmpului electromagnetic","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -191,7 +191,7 @@
 | $\mu_0$ | Permeabilitatea vidului | H/m |
 | $c$ | Viteza luminii | m/s |
 | $I$ | Intensitatea undei | W/m² |
-| $E_0, B_0$ | Amplitudinile câmpurilor | V/m, T |"
+| $E_0, B_0$ | Amplitudinile câmpurilor | V/m, T | [cite:page:22:p4]"
 "Legi (relații) de material în electromagnetism","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -207,7 +207,7 @@
 | $\mu_0$ | Permeabilitatea vidului | H/m |
 | $\mu_r$ | Permeabilitatea relativă | adimensional |
 | $\vec{j}$ | Densitatea curentului | A/m² |
-| $\sigma$ | Conductivitatea electrică | S/m |"
+| $\sigma$ | Conductivitatea electrică | S/m | [cite:page:23:p4]"
 "Operatori diferențiali (Gradient, Divergență, Rotor)","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -218,7 +218,7 @@
 | $\text{grad}$ | Gradient | depinde de context |
 | $\text{div}$ | Divergență | depinde de context |
 | $\text{rot}$ | Rotor | depinde de context |
-| $\Delta$ | Laplacianul | m⁻² |"
+| $\Delta$ | Laplacianul | m⁻² | [cite:page:24:p4]"
 "Ecuația undei mecanice (și unde mecanice în general)","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -234,7 +234,7 @@
 | $v_f$ | Viteza de fază | m/s |
 | $v_g$ | Viteza de grup | m/s |
 | $E$ | Modulul de elasticitate | Pa (Pascal) |
-| $\rho$ | Densitatea | kg/m³ |"
+| $\rho$ | Densitatea | kg/m³ | [cite:page:25:p4]"
 "Ecuația undei electromagnetice (deducere, propagare în vid)","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -248,7 +248,7 @@
 | $\varepsilon$ | Permitivitatea mediului | F/m |
 | $\mu$ | Permeabilitatea mediului | H/m |
 | $\sigma$ | Conductivitatea electrică | S/m |
-| $\vec{k}$ | Vectorul de undă | m⁻¹ |"
+| $\vec{k}$ | Vectorul de undă | m⁻¹ | [cite:page:26:p4]"
 "Clasificarea undelor electromagnetice","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -257,7 +257,7 @@
 | $\nu$ | Frecvența | Hz |
 | $c$ | Viteza luminii | m/s |
 | $E$ | Energia fotonului | J (Joule) |
-| $h$ | Constanta lui Planck | J·s ($6.626 \times 10^{-34}$) |"
+| $h$ | Constanta lui Planck | J·s ($6.626 \times 10^{-34}$) | [cite:page:27:p4]"
 "Efectul Doppler (inclusiv demonstrația cu viteze)","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -267,7 +267,7 @@
 | $v$ | Viteza undei în mediu | m/s |
 | $v_s$ | Viteza sursei | m/s |
 | $v_o$ | Viteza observatorului | m/s |
-| $c$ | Viteza luminii | m/s |"
+| $c$ | Viteza luminii | m/s | [cite:page:28:p4]"
 "Ecuația lui Schrödinger (temporală și atemporală; valori și vectori proprii)","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -281,7 +281,7 @@
 | $h$ | Constanta Planck | J·s ($6.626 \times 10^{-34}$) |
 | $m$ | Masa particulei | kg |
 | $U$ | Energia potențială | J (Joule) |
-| $i$ | Unitatea imaginară | adimensional |"
+| $i$ | Unitatea imaginară | adimensional | [cite:page:29:p4]"
 "Funcția de undă (semnificație, proprietăți)","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -293,7 +293,7 @@
 | $dV$ | Elementul de volum | m³ |
 | $\hat{A}$ | Operator observabilă | depinde de observabilă |
 | $\langle A \rangle$ | Valoarea medie | depinde de observabilă |
-| $\hbar$ | Constanta Planck redusă | J·s |"
+| $\hbar$ | Constanta Planck redusă | J·s | [cite:page:30:p4]"
 "Groapa de potențial cu pereți infiniți","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -306,7 +306,7 @@
 | $n$ | Numărul cuantic | adimensional |
 | $m$ | Masa particulei | kg |
 | $\hbar$ | Constanta Planck redusă | J·s |
-| $h$ | Constanta Planck | J·s |"
+| $h$ | Constanta Planck | J·s | [cite:page:31:p4]"
 "Groapa de potențial cu pereți finiți","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -319,7 +319,7 @@
 | $\psi$ | Funcția de undă | m⁻¹/² |
 | $\delta$ | Lungimea de penetrare | m |
 | $m$ | Masa particulei | kg |
-| $\hbar$ | Constanta Planck redusă | J·s |"
+| $\hbar$ | Constanta Planck redusă | J·s | [cite:page:32:p4]"
 "Bariera de potențial dreptunghiulară","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -332,8 +332,8 @@
 | $T$ | Coeficientul de transmisie | adimensional |
 | $R$ | Coeficientul de reflexie | adimensional |
 | $m$ | Masa particulei | kg |
-| $\hbar$ | Constanta Planck redusă | J·s |"
-"Bariera de potențial de formă oarecare","### Simboluri utilizate
+| $\hbar$ | Constanta Planck redusă | J·s | [cite:page:33:p4]"
+"Efectul Tunel prin Bariera de potențial de formă oarecare","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
 |---|---|---|
@@ -345,8 +345,8 @@
 | $\hbar$ | Constanta Planck redusă | J·s |
 | $a$ | Lățimea barierei | m |
 | $e$ | Sarcina electronului | C ($1.6 \times 10^{-19}$) |
-| $F$ | Câmpul electric | V/m |"
-"Efectul Tunel (prin bariere dreptunghiulare sau oarecare)","### Simboluri utilizate
+| $F$ | Câmpul electric | V/m | [cite:page:34:p4]"
+"Efectul Tunel (prin bariere dreptunghiulare)","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
 |---|---|---|
@@ -357,7 +357,7 @@
 | $m$ | Masa particulei | kg |
 | $\hbar$ | Constanta Planck redusă | J·s |
 | $a$ | Lățimea barierei | m |
-| $U_0$ | Înălțimea barierei | J (Joule) |"
+| $U_0$ | Înălțimea barierei | J (Joule) | [cite:page:35:p4]"
 "Emisia Alfa (radioactivitatea alfa explicată prin efect tunel)","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -373,7 +373,7 @@
 | $t_{1/2}$ | Timpul de înjumătățire | s |
 | $m$ | Masa particulei alfa | kg |
 | $\hbar$ | Constanta Planck redusă | J·s |
-| $\varepsilon_0$ | Permitivitatea vidului | F/m |"
+| $\varepsilon_0$ | Permitivitatea vidului | F/m | [cite:page:36:p4]"
 "Autoemisia / Emisia electrică la rece","### Simboluri utilizate
 
 | Simbol | Semnificație | Unitate de măsură (SI) |
@@ -387,4 +387,4 @@
 | $e$ | Sarcina electronului | C ($1.6 \times 10^{-19}$) |
 | $\hbar$ | Constanta Planck redusă | J·s |
 | $V$ | Tensiunea aplicată | V (Volt) |
-| $R$ | Raza vârfului metalic | m |"
+| $R$ | Raza vârfului metalic | m |[cite:page:37:p4]"
