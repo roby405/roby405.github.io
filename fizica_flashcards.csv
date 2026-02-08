@@ -1,0 +1,2254 @@
+"Front","Back"
+"Legile de conservare în mecanica clasică","## Principiile lui Newton (Baza Mecanicii Clasice)
+
+- **P I (Inerției):** Un corp își menține starea de repaus sau de mișcare rectilinie uniformă dacă suma forțelor este zero.
+- **P II (Fundamental):** $\vec{F} = m \cdot \vec{a}$ (Unitate de măsură: [N]).
+- **P III (Acțiunii și reacțiunii):** Oricărei acțiuni îi corespunde o reacțiune egală și de sens contrar.
+
+
+## Conservarea Impulsului
+
+Din Principiul II al dinamicii: $\vec{F} = \frac{d\vec{p}}{dt}$, unde $\vec{p} = m\vec{v}$ este impulsul.
+
+Dacă $\vec{F}_{ext} = 0$ (sistem izolat), atunci:
+
+
+$$
+\frac{d\vec{p}}{dt} = 0 \implies \vec{p} = \text{constant}
+$$
+
+
+Pentru un sistem de $N$ particule: $\vec{P}_{total} = \sum_{i=1}^{N} m_i \vec{v}_i = \text{constant}$
+
+
+## Conservarea Momentului Cinetic
+
+Momentul cinetic: $\vec{L} = \vec{r} \times \vec{p}$
+
+Teorema momentului cinetic: $\vec{M} = \frac{d\vec{L}}{dt}$, unde $\vec{M}$ este momentul forței.
+
+Dacă $\vec{M}_{ext} = 0$:
+
+
+$$
+\vec{L} = \text{constant}
+$$
+
+
+
+## Conservarea Energiei Mecanice
+
+Energia mecanică totală: $E = E_c + E_p = \frac{1}{2}mv^2 + U(\vec{r})$
+
+În absența forțelor neconservative (frecare):
+
+
+$$
+E = E_c + E_p = \text{constant}
+$$
+
+
+Relația forță - energie potențială: $\vec{F} = -\nabla U$
+
+
+## Mecanica Analitică
+
+**Formalismul Lagrange:**
+
+- Lagrangianul: $L = T - U$ (energie cinetică minus potențială)
+- Ecuațiile Euler-Lagrange:
+
+
+$$
+\frac{\partial L}{\partial q_i} - \frac{d}{dt}\left(\frac{\partial L}{\partial \dot{q}_i}\right) = 0
+$$
+
+
+**Formalismul Hamilton:**
+
+- Hamiltonianul: $H = T + U$ (energia totală)
+- Ecuațiile Hamilton:
+
+
+$$
+\dot{x} = \frac{\partial H}{\partial p}, \quad \dot{p} = -\frac{\partial H}{\partial x}
+$$
+
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $\vec{F}$ | Forța | N (Newton) |
+| $m$ | Masa | kg (kilogram) |
+| $\vec{a}$ | Accelerația | $m/s^2$ |
+| $\vec{p}$ | Impulsul | $kg\cdot m/s$ |
+| $\vec{v}$ | Viteza | $m/s$ |
+| $\vec{L}$ | Momentul cinetic | $kg\cdot m^2/s$ |
+| $\vec{M}$ | Momentul forței | $N\cdot m$ |
+| $E_c$ | Energia cinetică | J (Joule) |
+| $E_p$ | Energia potențială | J (Joule) |
+| $U$ | Energia potențială | J (Joule) |
+| $L$ | Lagrangianul | J (Joule) |
+| $H$ | Hamiltonianul | J (Joule) |
+| $q_i$ | Coordonate generalizate | depinde de caz |
+
+"
+"Oscilatorul armonic (simplu/neamortizat și energia acestuia)","## Definiții
+
+**Oscilația armonică:** Evoluție descrisă cu funcții armonice ($\sin, \cos$).
+
+Legea de mișcare:
+
+
+$$
+x(t) = A \cdot \cos(\omega t + \varphi)
+$$
+
+
+**Mărimi caracteristice:**
+
+- $x(t)$: Elongația (poziția la momentul $t$), $x \in [-A, A]$
+- $A$: Amplitudinea (elongația maximă)
+- $\Phi(t) = \omega t + \varphi$: Faza oscilației
+- $\varphi = \Phi(0)$: Faza inițială
+- $\omega$: Pulsația (frecvența unghiulară), $\omega = \frac{2\pi}{T} = 2\pi \nu$
+
+
+## Modelul Mecanic - Resortul Elastic
+
+Forța elastică (Legea lui Hooke):
+
+
+$$
+\vec{F}_e = -k \cdot \Delta \vec{l} \implies F_e = -kx
+$$
+
+
+Ecuația de mișcare:
+
+
+$$
+m \ddot{x} + kx = 0 \implies \ddot{x} + \omega^2 x = 0
+$$
+
+
+Pulsația proprie:
+
+
+$$
+\omega = \sqrt{\frac{k}{m}}
+$$
+
+
+Perioada oscilatorului elastic:
+
+
+$$
+T = \frac{2\pi}{\omega} = 2\pi \sqrt{\frac{m}{k}}
+$$
+
+
+
+## Condiții Inițiale
+
+Din $x(0) = x_0$ și $v(0) = v_0$:
+
+- Amplitudinea: $A = \sqrt{x_0^2 + \left(\frac{v_0}{\omega}\right)^2}$
+- Faza inițială: $\tan \varphi = -\frac{v_0}{\omega x_0}$
+
+
+## Energia Oscilatorului Armonic
+
+- **Energie Cinetică:** $E_c = \frac{1}{2}mv^2 = \frac{1}{2}m A^2 \omega^2 \sin^2(\omega t + \varphi)$
+- **Energie Potențială:** $E_p = \frac{1}{2}kx^2 = \frac{1}{2}k A^2 \cos^2(\omega t + \varphi)$
+
+Energia totală (se conservă):
+
+
+$$
+E = E_c + E_p = \frac{1}{2}kA^2 = \frac{1}{2}m\omega^2 A^2 = \text{constant}
+$$
+
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $x(t)$ | Elongația | m (metru) |
+| $A$ | Amplitudinea | m |
+| $\omega$ | Pulsația | rad/s |
+| $\varphi$ | Faza inițială | rad |
+| $T$ | Perioada | s (secundă) |
+| $\nu$ | Frecvența | Hz (Hertz) |
+| $k$ | Constanta elastică | N/m |
+| $m$ | Masa | kg |
+| $E_c$ | Energia cinetică | J (Joule) |
+| $E_p$ | Energia potențială | J (Joule) |
+| $v$ | Viteza | m/s |
+
+"
+"Oscilatorul amortizat (inclusiv amortizat în fluid)","## Forța de Frecare Fluidă
+
+Forța de rezistență vâscoasă:
+
+
+$$
+\vec{F}_r = -b \vec{v}
+$$
+
+
+unde $b$ este coeficientul de frecare vâscoasă ($[b]_{SI} = \text{Ns/m}$).
+
+
+## Ecuația Mișcării
+
+
+$$
+m\ddot{x} + b\dot{x} + kx = 0 \implies \ddot{x} + 2\gamma \dot{x} + \omega_0^2 x = 0
+$$
+
+
+Notații:
+
+- $\omega_0^2 = \frac{k}{m}$ (pătratul pulsației proprii)
+- $\gamma = \frac{b}{2m}$ (factor de amortizare)
+
+
+## Cazuri de Amortizare
+
+**1. Amortizare Supracritică ($\gamma > \omega_0$):**
+
+
+$$
+x(t) = e^{-\gamma t} \left( A e^{\sqrt{\gamma^2 - \omega_0^2}t} + B e^{-\sqrt{\gamma^2 - \omega_0^2}t} \right)
+$$
+
+
+Mișcare aperiodică, revenire lentă la echilibru.
+
+**2. Amortizare Critică ($\gamma = \omega_0$):**
+
+
+$$
+x(t) = e^{-\gamma t} (A + B t)
+$$
+
+
+Cea mai rapidă revenire la echilibru fără oscilații.
+
+**3. Amortizare Subcritică ($\gamma < \omega_0$):**
+
+
+$$
+x(t) = A_0 e^{-\gamma t} \cos(\omega_1 t + \varphi)
+$$
+
+
+Pseudo-pulsația: $\omega_1 = \sqrt{\omega_0^2 - \gamma^2}$
+
+Pseudo-perioada: $T_1 = \frac{2\pi}{\omega_1} > T_0$
+
+
+## Decrementul Logaritmic
+
+
+$$
+D = \ln \frac{A(t)}{A(t + T_1)} = \gamma T_1 = \frac{2\pi\gamma}{\sqrt{\omega_0^2 - \gamma^2}}
+$$
+
+
+
+## Timpul de Relaxare
+
+
+$$
+\tau = \frac{1}{\gamma}
+$$
+
+
+Este timpul după care amplitudinea scade de $e$ ori.
+
+
+## Puterea Disipată
+
+
+$$
+P_r(t) = -b v^2(t)
+$$
+
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $b$ | Coeficientul de frecare vâscoasă | N·s/m |
+| $\gamma$ | Factorul de amortizare | s⁻¹ |
+| $\omega_0$ | Pulsația proprie | rad/s |
+| $\omega_1$ | Pseudo-pulsația | rad/s |
+| $T_1$ | Pseudo-perioada | s |
+| $D$ | Decrementul logaritmic | adimensional |
+| $\tau$ | Timpul de relaxare | s |
+| $A_0$ | Amplitudinea inițială | m |
+| $k$ | Constanta elastică | N/m |
+| $m$ | Masa | kg |
+| $P_r$ | Puterea disipată | W (Watt) |
+
+"
+"Oscilatorul forțat (inclusiv rezonanța de amplitudine, viteză și putere)","## Ecuația de Mișcare
+
+Cu forță exterioară periodică $F_{ext}(t) = F_0 \sin(\omega t)$:
+
+
+$$
+\ddot{x} + 2\gamma \dot{x} + \omega_0^2 x = \frac{F_0}{m} \sin(\omega t)
+$$
+
+
+
+## Soluția în Regim Permanent
+
+
+$$
+x(t) = B \sin(\omega t + \delta)
+$$
+
+
+Amplitudinea oscilațiilor forțate:
+
+
+$$
+B(\omega) = \frac{F_0 / m}{\sqrt{(\omega_0^2 - \omega^2)^2 + 4\gamma^2 \omega^2}}
+$$
+
+
+Faza:
+
+
+$$
+\tan \delta = \frac{-2\gamma\omega}{\omega_0^2 - \omega^2}
+$$
+
+
+
+## Rezonanța de Amplitudine
+
+Pulsația de rezonanță (pentru amplitudine maximă):
+
+
+$$
+\omega_r = \sqrt{\omega_0^2 - 2\gamma^2}
+$$
+
+
+Există doar dacă $\gamma < \frac{\omega_0}{\sqrt{2}}$.
+
+Amplitudinea maximă:
+
+
+$$
+B_{max} = \frac{F_0}{2m\gamma \sqrt{\omega_0^2 - \gamma^2}}
+$$
+
+
+
+## Rezonanța de Viteză
+
+Are loc exact la pulsația proprie:
+
+
+$$
+\omega_{rez}^{viteză} = \omega_0
+$$
+
+
+
+## Rezonanța de Putere
+
+Coincide cu rezonanța de viteză: $\omega = \omega_0$
+
+
+## Factorul de Calitate
+
+
+$$
+Q = \frac{\omega_0}{2\gamma} = \frac{\omega_0}{\Delta \omega}
+$$
+
+
+Lărgimea benzii la semînălțime: $\Delta \omega = 2\gamma$
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $F_0$ | Amplitudinea forței externe | N |
+| $\omega$ | Pulsația forței externe | rad/s |
+| $\omega_0$ | Pulsația proprie | rad/s |
+| $\omega_r$ | Pulsația de rezonanță | rad/s |
+| $\gamma$ | Factorul de amortizare | s⁻¹ |
+| $B$ | Amplitudinea oscilației forțate | m |
+| $\delta$ | Defazajul | rad |
+| $Q$ | Factorul de calitate | adimensional |
+| $\Delta \omega$ | Lărgimea benzii | rad/s |
+| $m$ | Masa | kg |
+
+"
+"Oscilatorul cuplat / dublu (elastic)","## Modelul Mecanic Simetric
+
+Două corpuri de masă $m$ legate prin resorturi cu constante $k$ (la capete) și $k_b$ (de cuplaj).
+
+Ecuațiile de mișcare:
+
+
+$$
+\begin{cases} \ddot{\eta}_1 + \frac{k+k_b}{m}\eta_1 - \frac{k_b}{m}\eta_2 = 0 \\ \ddot{\eta}_2 + \frac{k+k_b}{m}\eta_2 - \frac{k_b}{m}\eta_1 = 0 \end{cases}
+$$
+
+
+
+## Coordonate Normale (Decuplare)
+
+- $s(t) = \eta_1(t) + \eta_2(t)$ (Modul simetric)
+- $d(t) = \eta_1(t) - \eta_2(t)$ (Modul antisimetric)
+
+
+## Modurile Proprii de Vibrație
+
+**1. Modul Fundamental (Simetric):**
+
+
+$$
+\omega_s = \sqrt{\frac{k}{m}}
+$$
+
+
+Corpurile oscilează în fază ($\eta_1 = \eta_2$).
+
+**2. Modul Excitat (Antisimetric):**
+
+
+$$
+\omega_d = \sqrt{\frac{k + 2k_b}{m}}
+$$
+
+
+Corpurile oscilează în antifază ($\eta_1 = -\eta_2$).
+
+Observație: $\omega_d > \omega_s$
+
+
+## Soluția Generală
+
+
+$$
+\begin{cases} \eta_1(t) = \frac{S}{2} \sin(\omega_s t + \varphi_s) + \frac{D}{2} \sin(\omega_d t + \varphi_d) \\ \eta_2(t) = \frac{S}{2} \sin(\omega_s t + \varphi_s) - \frac{D}{2} \sin(\omega_d t + \varphi_d) \end{cases}
+$$
+
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $m$ | Masa fiecărui corp | kg |
+| $k$ | Constanta elastică a resorturilor laterale | N/m |
+| $k_b$ | Constanta elastică a resortului de cuplaj | N/m |
+| $\eta_1, \eta_2$ | Elongațiile celor două corpuri | m |
+| $\omega_s$ | Pulsația modului simetric | rad/s |
+| $\omega_d$ | Pulsația modului antisimetric | rad/s |
+| $S, D$ | Amplitudinile modurilor normale | m |
+| $\varphi_s, \varphi_d$ | Fazele inițiale | rad |
+
+"
+"Oscilatorul LC / RLC (inclusiv comparația RLC cu oscilatorul mecanic)","## Circuitul LC (Oscilator Ideal)
+
+Ecuația tensiunilor:
+
+
+$$
+L\ddot{q} + \frac{1}{C}q = 0 \implies \ddot{q} + \frac{1}{LC}q = 0
+$$
+
+
+Pulsația proprie (Formula lui Thomson):
+
+
+$$
+\omega = \frac{1}{\sqrt{LC}}
+$$
+
+
+
+## Analogia Mecano-Electromagnetică
+
+| Oscilator Mecanic | Oscilator Electromagnetic |
+|---|---|
+| Elongația $x$ | Sarcina electrică $q$ |
+| Viteza $v = \dot{x}$ | Curentul $i = \dot{q}$ |
+| Masa $m$ | Inductanța $L$ |
+| Constanta elastică $k$ | Inversul capacității $1/C$ |
+| Coef. frecare $b$ | Rezistența $R$ |
+| $E_c = \frac{1}{2}mv^2$ | $W_m = \frac{1}{2}Li^2$ |
+| $E_p = \frac{1}{2}kx^2$ | $W_e = \frac{1}{2C}q^2$ |
+
+
+## Circuitul RLC Serie (Amortizat)
+
+Ecuația:
+
+
+$$
+L \ddot{q} + R \dot{q} + \frac{1}{C} q = 0
+$$
+
+
+Parametrii:
+
+- Factor de amortizare: $\gamma = \frac{R}{2L}$
+- Pulsația proprie: $\omega_0 = \frac{1}{\sqrt{LC}}$
+- Pseudo-pulsația: $\omega_1 = \sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}}$
+
+
+## Impedanța în Curent Alternativ
+
+
+$$
+Z(\omega) = \sqrt{R^2 + \left( \omega L - \frac{1}{\omega C} \right)^2}
+$$
+
+
+La rezonanță ($\omega = \omega_0$): $Z = R$ (minim), curentul maxim.
+
+
+## Valori Efective
+
+
+$$
+I_{ef} = \frac{I_0}{\sqrt{2}}, \quad U_{ef} = \frac{U_0}{\sqrt{2}}
+$$
+
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $L$ | Inductanța | H (Henry) |
+| $C$ | Capacitatea | F (Farad) |
+| $R$ | Rezistența | Ω (Ohm) |
+| $q$ | Sarcina electrică | C (Coulomb) |
+| $i$ | Curentul electric | A (Amper) |
+| $\omega$ | Pulsația | rad/s |
+| $\gamma$ | Factorul de amortizare | s⁻¹ |
+| $Z$ | Impedanța | Ω (Ohm) |
+| $I_{ef}$ | Curentul eficace | A |
+| $U_{ef}$ | Tensiunea eficace | V (Volt) |
+
+"
+"Legea lui Fourier","## Enunț
+
+Dacă într-un mediu există diferențe de temperatură, apare un flux de căldură de la zonele calde spre cele reci.
+
+
+$$
+\vec{j}_Q = -\lambda \nabla T = -\lambda \text{ grad } T
+$$
+
+
+
+## Mărimi
+
+- $\vec{j}_Q$: Densitatea fluxului termic ($[j_Q]_{SI} = \text{W/m}^2$)
+- $\lambda$: Conductivitatea termică ($[\lambda]_{SI} = \text{W/(m \cdot K)}$)
+- $\nabla T$: Gradientul de temperatură
+- Semnul $(-)$: Fluxul este opus gradientului (căldura curge spre temperaturi mai mici)
+
+
+## Forma Scalară (1D)
+
+Pentru o bară pe direcția $x$:
+
+
+$$
+j_Q = -\lambda \frac{dT}{dx}
+$$
+
+
+
+## Fluxul Termic Total
+
+Prin suprafața $S$:
+
+
+$$
+\Phi_Q = \int_S \vec{j}_Q \cdot d\vec{S}
+$$
+
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $\vec{j}_Q$ | Densitatea fluxului termic | W/m² |
+| $\lambda$ | Conductivitatea termică | W/(m·K) |
+| $T$ | Temperatura | K (Kelvin) |
+| $\nabla T$ | Gradientul de temperatură | K/m |
+| $\Phi_Q$ | Fluxul termic total | W (Watt) |
+| $S$ | Suprafața | m² |
+
+"
+"Ecuația căldurii (deducere, soluția 1D, cazul omogen)","## Deducerea Ecuației Căldurii
+
+Pornim de la bilanțul energetic într-un volum $V$ delimitat de suprafața $\Sigma$.
+
+Variația energiei interne:
+
+
+$$
+\frac{dQ}{dt} = \int_V \rho c \frac{\partial T}{\partial t} dV
+$$
+
+
+Fluxul de căldură prin suprafață (Gauss-Ostrogradski):
+
+
+$$
+\Phi_{\Sigma} = \oint_{\Sigma} \vec{j}_Q \cdot d\vec{S} = \int_V (\nabla \cdot \vec{j}_Q) dV
+$$
+
+
+Din conservarea energiei:
+
+
+$$
+\rho c \frac{\partial T}{\partial t} = - \nabla \cdot \vec{j}_Q
+$$
+
+
+Înlocuind legea lui Fourier ($\vec{j}_Q = -\lambda \nabla T$):
+
+
+$$
+\rho c \frac{\partial T}{\partial t} = \nabla \cdot (\lambda \nabla T)
+$$
+
+
+
+## Ecuația Căldurii (Mediu Omogen)
+
+
+$$
+\frac{\partial T}{\partial t} = D_{th} \nabla^2 T = D_{th} \Delta T
+$$
+
+
+unde difuzivitatea termică: $D_{th} = \frac{\lambda}{\rho c}$ ($m^2/s$)
+
+
+## Soluția 1D prin Separarea Variabilelor
+
+Căutăm soluție de forma $T(x,t) = X(x) \cdot \theta(t)$.
+
+**Ecuația temporală:**
+
+
+$$
+\theta(t) = \theta_0 e^{-D\lambda^2 t}
+$$
+
+
+(Relaxare exponențială)
+
+**Ecuația spațială:**
+
+
+$$
+X(x) = A \cos(\lambda x) + B \sin(\lambda x)
+$$
+
+
+
+## Condiții la Frontieră
+
+**Dirichlet (temperatură impusă):** $T(0, t) = T_S$, $T(L, t) = T_D$
+
+**Neumann (flux impus/izolare):** $\frac{\partial T}{\partial x}\big|_{frontieră} = 0$
+
+**Soluția pentru capete termostate ($T=0$):**
+
+
+$$
+T(x,t) = \sum_{n=1}^{\infty} B_n \sin\left(\frac{n\pi}{L} x\right) e^{-D \left(\frac{n\pi}{L}\right)^2 t}
+$$
+
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $T$ | Temperatura | K (Kelvin) |
+| $\rho$ | Densitatea | kg/m³ |
+| $c$ | Căldura specifică | J/(kg·K) |
+| $\lambda$ | Conductivitatea termică | W/(m·K) |
+| $D_{th}$ | Difuzivitatea termică | m²/s |
+| $\vec{j}_Q$ | Densitatea fluxului termic | W/m² |
+| $Q$ | Căldura | J (Joule) |
+| $V$ | Volumul | m³ |
+| $L$ | Lungimea barei | m |
+
+"
+"Ecuațiile lui Maxwell (formă, discuție)","## Mărimi de Câmp
+
+- $\vec{E}$: Intensitatea câmpului electric ($V/m$)
+- $\vec{D} = \varepsilon \vec{E}$: Inducția electrică ($C/m^2$)
+- $\vec{B}$: Inducția magnetică ($T = Wb/m^2$)
+- $\vec{H}$: Intensitatea câmpului magnetic ($A/m$), $\vec{B} = \mu \vec{H}$
+- $\vec{j}$: Densitatea curentului de conducție ($A/m^2$)
+
+
+## Forma Diferențială (Locală)
+
+**I. Legea Gauss pentru câmp electric:**
+
+
+$$
+\nabla \cdot \vec{D} = \rho_v \quad (\text{div } \vec{D} = \rho_v)
+$$
+
+
+Câmpul electric este generat de sarcini electrice.
+
+**II. Legea Gauss pentru câmp magnetic:**
+
+
+$$
+\nabla \cdot \vec{B} = 0 \quad (\text{div } \vec{B} = 0)
+$$
+
+
+Nu există monopoli magnetici. Liniile de câmp magnetic sunt închise.
+
+**III. Legea inducției (Faraday):**
+
+
+$$
+\nabla \times \vec{E} = - \frac{\partial \vec{B}}{\partial t}
+$$
+
+
+Un câmp magnetic variabil generează câmp electric turbionar.
+
+**IV. Legea Ampère-Maxwell:**
+
+
+$$
+\nabla \times \vec{H} = \vec{j} + \frac{\partial \vec{D}}{\partial t}
+$$
+
+
+Câmpul magnetic este generat de curentul de conducție și de variația câmpului electric (curentul de deplasare).
+
+
+## Forma Integrală (Globală)
+
+
+$$
+\oint_{\Sigma} \vec{D} \cdot d\vec{S} = Q_{int}
+$$
+
+
+
+$$
+\oint_{\Sigma} \vec{B} \cdot d\vec{S} = 0
+$$
+
+
+
+$$
+\oint_{\Gamma} \vec{E} \cdot d\vec{l} = - \frac{d}{dt} \iint_S \vec{B} \cdot d\vec{S}
+$$
+
+
+
+$$
+\oint_{\Gamma} \vec{H} \cdot d\vec{l} = I_{cond} + \frac{d}{dt} \iint_S \vec{D} \cdot d\vec{S}
+$$
+
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $\vec{E}$ | Intensitatea câmpului electric | V/m |
+| $\vec{D}$ | Inducția electrică | C/m² |
+| $\vec{B}$ | Inducția magnetică | T (Tesla) |
+| $\vec{H}$ | Intensitatea câmpului magnetic | A/m |
+| $\vec{j}$ | Densitatea curentului de conducție | A/m² |
+| $\rho_v$ | Densitatea volumică de sarcină | C/m³ |
+| $\varepsilon$ | Permitivitatea | F/m |
+| $\mu$ | Permeabilitatea | H/m |
+| $Q_{int}$ | Sarcina electrică interioară | C (Coulomb) |
+
+"
+"Legea lui Coulomb","## Enunț
+
+Forța de interacțiune electrostatică între două sarcini punctiforme $q_1$ și $q_2$ aflate la distanța $r$:
+
+
+$$
+\vec{F} = \frac{1}{4\pi\varepsilon_0} \frac{q_1 q_2}{r^2} \hat{r}
+$$
+
+
+
+## Caracteristici
+
+- Forța este radială (pe direcția care unește sarcinile)
+- Atractivă pentru sarcini de semne opuse
+- Repulsivă pentru sarcini de același semn
+- $\varepsilon_0 = 8.85 \times 10^{-12}$ F/m (permitivitatea vidului)
+- $\frac{1}{4\pi\varepsilon_0} \approx 9 \times 10^9$ Nm²/C²
+
+
+## Câmpul Electric
+
+Câmpul creat de o sarcină punctiformă $q$:
+
+
+$$
+\vec{E} = \frac{1}{4\pi\varepsilon_0} \frac{q}{r^2} \hat{r}
+$$
+
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $\vec{F}$ | Forța electrostatică | N (Newton) |
+| $q_1, q_2$ | Sarcinile electrice | C (Coulomb) |
+| $r$ | Distanța dintre sarcini | m (metru) |
+| $\hat{r}$ | Versorul direcției | adimensional |
+| $\varepsilon_0$ | Permitivitatea vidului | F/m |
+| $\vec{E}$ | Intensitatea câmpului electric | V/m |
+
+"
+"Legea lui Faraday","## Enunț (Inducția Electromagnetică)
+
+Tensiunea electromotoare indusă într-un circuit este egală cu rata de variație a fluxului magnetic prin suprafața delimitată de circuit.
+
+
+$$
+\mathcal{E} = -\frac{d\Phi_B}{dt}
+$$
+
+
+unde fluxul magnetic: $\Phi_B = \iint_S \vec{B} \cdot d\vec{S}$
+
+
+## Forma Integrală
+
+
+$$
+\oint_{\Gamma} \vec{E} \cdot d\vec{l} = - \frac{d}{dt} \iint_S \vec{B} \cdot d\vec{S}
+$$
+
+
+
+## Forma Diferențială
+
+
+$$
+\nabla \times \vec{E} = - \frac{\partial \vec{B}}{\partial t}
+$$
+
+
+
+## Interpretare
+
+- Un câmp magnetic variabil în timp generează un câmp electric turbionar (rotațional)
+- Semnul minus (Legea lui Lenz): curentul indus se opune cauzei care l-a produs
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $\mathcal{E}$ | Tensiunea electromotoare indusă | V (Volt) |
+| $\Phi_B$ | Fluxul magnetic | Wb (Weber) |
+| $\vec{B}$ | Inducția magnetică | T (Tesla) |
+| $\vec{E}$ | Intensitatea câmpului electric | V/m |
+| $S$ | Suprafața | m² |
+| $\Gamma$ | Conturul închis | m |
+
+"
+"Legea lui Gauss (câmp electric și magnetic)","## Legea Gauss pentru Câmp Electric
+
+**Forma integrală:**
+
+
+$$
+\oint_{\Sigma} \vec{D} \cdot d\vec{S} = Q_{int}
+$$
+
+
+Fluxul inducției electrice prin orice suprafață închisă este egal cu sarcina electrică totală din interiorul suprafeței.
+
+**Forma diferențială:**
+
+
+$$
+\nabla \cdot \vec{D} = \rho_v
+$$
+
+
+Divergența inducției electrice este egală cu densitatea volumică de sarcină.
+
+**În vid:** $\vec{D} = \varepsilon_0 \vec{E}$
+
+
+$$
+\nabla \cdot \vec{E} = \frac{\rho_v}{\varepsilon_0}
+$$
+
+
+
+## Legea Gauss pentru Câmp Magnetic
+
+**Forma integrală:**
+
+
+$$
+\oint_{\Sigma} \vec{B} \cdot d\vec{S} = 0
+$$
+
+
+Fluxul inducției magnetice prin orice suprafață închisă este nul.
+
+**Forma diferențială:**
+
+
+$$
+\nabla \cdot \vec{B} = 0
+$$
+
+
+**Interpretare:**
+
+- Nu există sarcini magnetice (monopoli magnetici)
+- Liniile de câmp magnetic sunt întotdeauna închise
+- Câmpul magnetic este solenoidal
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $\vec{D}$ | Inducția electrică | C/m² |
+| $\vec{E}$ | Intensitatea câmpului electric | V/m |
+| $\vec{B}$ | Inducția magnetică | T (Tesla) |
+| $Q_{int}$ | Sarcina electrică interioară | C (Coulomb) |
+| $\rho_v$ | Densitatea volumică de sarcină | C/m³ |
+| $\varepsilon_0$ | Permitivitatea vidului | F/m |
+| $\Sigma$ | Suprafața închisă | m² |
+
+"
+"Forța Lorentz","## Definiție
+
+Forța care acționează asupra unei sarcini electrice $q$ aflată în câmp electromagnetic:
+
+
+$$
+\vec{F} = q(\vec{E} + \vec{v} \times \vec{B})
+$$
+
+
+
+## Componentele
+
+- $\vec{F}_E = q\vec{E}$: Componenta electrică (în direcția câmpului $\vec{E}$)
+- $\vec{F}_B = q\vec{v} \times \vec{B}$: Componenta magnetică (perpendiculară pe $\vec{v}$ și $\vec{B}$)
+
+
+## Proprietăți ale Forței Magnetice
+
+- Nu efectuează lucru mecanic (perpendiculară pe deplasare)
+- Modifică direcția vitezei, nu modulul
+- În câmp magnetic uniform, particula descrie o traiectorie circulară sau elicoidală
+
+
+## Raza de Ciclotron
+
+Pentru o particulă în câmp magnetic uniform:
+
+
+$$
+r = \frac{mv}{qB}
+$$
+
+
+Pulsația de ciclotron:
+
+
+$$
+\omega_c = \frac{qB}{m}
+$$
+
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $\vec{F}$ | Forța Lorentz | N (Newton) |
+| $q$ | Sarcina electrică | C (Coulomb) |
+| $\vec{E}$ | Intensitatea câmpului electric | V/m |
+| $\vec{v}$ | Viteza particulei | m/s |
+| $\vec{B}$ | Inducția magnetică | T (Tesla) |
+| $r$ | Raza de ciclotron | m |
+| $\omega_c$ | Pulsația de ciclotron | rad/s |
+| $m$ | Masa particulei | kg |
+
+"
+"Vectorul Poynting","## Definiție
+
+Vectorul Poynting reprezintă densitatea fluxului de putere electromagnetică:
+
+
+$$
+\vec{S} = \vec{E} \times \vec{H}
+$$
+
+
+Unitate: $[\vec{S}]_{SI} = \text{W/m}^2$
+
+
+## Semnificație Fizică
+
+- Direcția: sensul de propagare a energiei electromagnetice
+- Modulul: puterea transportată pe unitatea de suprafață
+
+
+## Teorema lui Poynting (Conservarea Energiei EM)
+
+Forma diferențială:
+
+
+$$
+-\frac{\partial w}{\partial t} = \vec{j} \cdot \vec{E} + \nabla \cdot \vec{S}
+$$
+
+
+unde $w = \frac{1}{2}\vec{E}\cdot\vec{D} + \frac{1}{2}\vec{B}\cdot\vec{H}$ este densitatea de energie.
+
+Forma integrală:
+
+
+$$
+-\frac{d}{dt} \iiint_V w \, dV = \iiint_V \vec{j} \cdot \vec{E} \, dV + \oint_{\Sigma} \vec{S} \cdot d\vec{A}
+$$
+
+
+**Interpretare:** Rata de scădere a energiei EM stocate = Puterea disipată (Joule) + Puterea radiată.
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $\vec{S}$ | Vectorul Poynting | W/m² |
+| $\vec{E}$ | Intensitatea câmpului electric | V/m |
+| $\vec{H}$ | Intensitatea câmpului magnetic | A/m |
+| $w$ | Densitatea de energie EM | J/m³ |
+| $\vec{D}$ | Inducția electrică | C/m² |
+| $\vec{B}$ | Inducția magnetică | T (Tesla) |
+| $\vec{j}$ | Densitatea curentului | A/m² |
+
+"
+"Energia și intensitatea câmpului electromagnetic","## Densitatea de Energie Electromagnetică
+
+
+$$
+w = w_e + w_m = \frac{1}{2}\vec{E}\cdot\vec{D} + \frac{1}{2}\vec{B}\cdot\vec{H}
+$$
+
+
+În vid ($\vec{D} = \varepsilon_0 \vec{E}$, $\vec{B} = \mu_0 \vec{H}$):
+
+
+$$
+w = \frac{1}{2}\varepsilon_0 E^2 + \frac{1}{2\mu_0} B^2
+$$
+
+
+
+## Relația între $E$ și $H$ în Undă Plană
+
+Pentru o undă electromagnetică plană:
+
+
+$$
+\varepsilon_0 E^2 = \mu_0 H^2
+$$
+
+
+sau echivalent: $E = cB$ (unde $c = \frac{1}{\sqrt{\varepsilon_0 \mu_0}}$)
+
+
+## Intensitatea Undei EM
+
+Intensitatea (puterea medie pe unitate de suprafață):
+
+
+$$
+I = \langle S \rangle = \frac{1}{2}\varepsilon_0 c E_0^2 = \frac{c}{2\mu_0} B_0^2
+$$
+
+
+
+## Energia Totală în Volum
+
+
+$$
+W_{EM} = \iiint_V w \, dV
+$$
+
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $w$ | Densitatea de energie EM | J/m³ |
+| $w_e$ | Densitatea de energie electrică | J/m³ |
+| $w_m$ | Densitatea de energie magnetică | J/m³ |
+| $\vec{E}$ | Intensitatea câmpului electric | V/m |
+| $\vec{D}$ | Inducția electrică | C/m² |
+| $\vec{B}$ | Inducția magnetică | T (Tesla) |
+| $\vec{H}$ | Intensitatea câmpului magnetic | A/m |
+| $\varepsilon_0$ | Permitivitatea vidului | F/m |
+| $\mu_0$ | Permeabilitatea vidului | H/m |
+| $c$ | Viteza luminii | m/s |
+| $I$ | Intensitatea undei | W/m² |
+| $E_0, B_0$ | Amplitudinile câmpurilor | V/m, T |
+
+"
+"Legi (relații) de material în electromagnetism","## Relații Constitutive
+
+Leagă mărimile de câmp de proprietățile mediului material.
+
+**1. Relația pentru câmpul electric:**
+
+
+$$
+\vec{D} = \varepsilon \vec{E} = \varepsilon_0 \varepsilon_r \vec{E}
+$$
+
+
+- $\varepsilon$: permitivitatea absolută
+- $\varepsilon_0 = 8.85 \times 10^{-12}$ F/m: permitivitatea vidului
+- $\varepsilon_r$: permitivitatea relativă (constantă dielectrică)
+
+**2. Relația pentru câmpul magnetic:**
+
+
+$$
+\vec{B} = \mu \vec{H} = \mu_0 \mu_r \vec{H}
+$$
+
+
+- $\mu$: permeabilitatea absolută
+- $\mu_0 = 4\pi \times 10^{-7}$ H/m: permeabilitatea vidului
+- $\mu_r$: permeabilitatea relativă
+
+**3. Legea lui Ohm (forma locală):**
+
+
+$$
+\vec{j} = \sigma \vec{E}
+$$
+
+
+- $\sigma$: conductivitatea electrică ($[\sigma] = S/m = (\Omega m)^{-1}$)
+- $\rho = 1/\sigma$: rezistivitatea
+
+
+## Clasificarea Mediilor
+
+- **Liniar:** $\varepsilon, \mu, \sigma$ nu depind de intensitatea câmpului
+- **Omogen:** $\varepsilon, \mu, \sigma$ nu depind de poziție
+- **Izotrop:** $\varepsilon, \mu, \sigma$ nu depind de direcție
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $\vec{D}$ | Inducția electrică | C/m² |
+| $\vec{E}$ | Intensitatea câmpului electric | V/m |
+| $\varepsilon$ | Permitivitatea absolută | F/m |
+| $\varepsilon_0$ | Permitivitatea vidului | F/m |
+| $\varepsilon_r$ | Permitivitatea relativă | adimensional |
+| $\vec{B}$ | Inducția magnetică | T (Tesla) |
+| $\vec{H}$ | Intensitatea câmpului magnetic | A/m |
+| $\mu$ | Permeabilitatea absolută | H/m |
+| $\mu_0$ | Permeabilitatea vidului | H/m |
+| $\mu_r$ | Permeabilitatea relativă | adimensional |
+| $\vec{j}$ | Densitatea curentului | A/m² |
+| $\sigma$ | Conductivitatea electrică | S/m |
+
+"
+"Operatori diferențiali (Gradient, Divergență, Rotor)","## Operatorul Nabla
+
+
+$$
+\nabla = \frac{\partial}{\partial x}\vec{i} + \frac{\partial}{\partial y}\vec{j} + \frac{\partial}{\partial z}\vec{k}
+$$
+
+
+
+## Gradientul (grad)
+
+Acționează pe câmp scalar $\varphi$, rezultă câmp vectorial:
+
+
+$$
+\text{grad } \varphi = \nabla \varphi = \frac{\partial \varphi}{\partial x}\vec{i} + \frac{\partial \varphi}{\partial y}\vec{j} + \frac{\partial \varphi}{\partial z}\vec{k}
+$$
+
+
+**Semnificație:** Indică direcția celei mai rapide creșteri a funcției scalare.
+
+**Aplicație:** $\vec{F} = -\nabla U$ (forța din energia potențială)
+
+
+## Divergența (div)
+
+Produs scalar între $\nabla$ și câmp vectorial $\vec{V}$, rezultă scalar:
+
+
+$$
+\text{div } \vec{V} = \nabla \cdot \vec{V} = \frac{\partial V_x}{\partial x} + \frac{\partial V_y}{\partial y} + \frac{\partial V_z}{\partial z}
+$$
+
+
+**Semnificație:** Măsoară caracterul de ""izvor"" al câmpului (fluxul pe unitatea de volum).
+
+**Teorema Gauss-Ostrogradski:**
+
+
+$$
+\oint_{\Sigma} \vec{A} \cdot d\vec{S} = \iiint_{V} \text{div } \vec{A} \, dV
+$$
+
+
+
+## Rotorul (rot / curl)
+
+Produs vectorial între $\nabla$ și câmp vectorial $\vec{V}$, rezultă vector:
+
+
+$$
+\text{rot } \vec{V} = \nabla \times \vec{V} = \begin{vmatrix} \vec{i} & \vec{j} & \vec{k} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ V_x & V_y & V_z \end{vmatrix}
+$$
+
+
+**Semnificație:** Măsoară tendința de rotație (turbionare) a câmpului.
+
+**Teorema lui Stokes:**
+
+
+$$
+\oint_{\Gamma} \vec{A} \cdot d\vec{l} = \iint_{S} (\text{rot } \vec{A}) \cdot d\vec{S}
+$$
+
+
+
+## Laplacianul
+
+
+$$
+\Delta = \nabla^2 = \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2}
+$$
+
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $\nabla$ | Operatorul nabla | m⁻¹ |
+| $\varphi$ | Câmp scalar | depinde de context |
+| $\vec{V}$ | Câmp vectorial | depinde de context |
+| $\text{grad}$ | Gradient | depinde de context |
+| $\text{div}$ | Divergență | depinde de context |
+| $\text{rot}$ | Rotor | depinde de context |
+| $\Delta$ | Laplacianul | m⁻² |
+
+"
+"Ecuația undei mecanice (și unde mecanice în general)","## Ecuația Undelor (Unidimensională)
+
+
+$$
+\frac{\partial^2 \eta}{\partial t^2} = v^2 \frac{\partial^2 \eta}{\partial x^2}
+$$
+
+
+Viteza de fază: $v = \sqrt{\frac{E}{\rho}}$ (pentru bare elastice)
+
+
+## Soluția - Unda Plană Monocromatică
+
+
+$$
+\eta(x,t) = A \sin(\omega t - kx + \varphi_0)
+$$
+
+
+**Mărimi caracteristice:**
+
+- $A$: Amplitudinea
+- $\omega = 2\pi \nu$: Pulsația
+- $T = \frac{2\pi}{\omega}$: Perioada temporală
+- $\lambda = vT$: Lungimea de undă
+- $k = \frac{2\pi}{\lambda} = \frac{\omega}{v}$: Numărul de undă
+
+
+## Relația de Dispersie
+
+
+$$
+v_f = \frac{\omega}{k} = \frac{\lambda}{T}
+$$
+
+
+
+## Viteza de Grup
+
+
+$$
+v_g = \frac{d\omega}{dk}
+$$
+
+
+**Mediu nedispersiv:** $v_g = v_f$
+
+**Mediu dispersiv:** $v_g \neq v_f$
+
+
+## Ecuația Undelor 3D
+
+
+$$
+\Delta \eta = \frac{1}{v^2} \frac{\partial^2 \eta}{\partial t^2}
+$$
+
+
+Soluție: $\eta(\vec{r}, t) = A \sin(\omega t - \vec{k} \cdot \vec{r})$
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $\eta$ | Elongația undei | m |
+| $v$ | Viteza de fază | m/s |
+| $A$ | Amplitudinea | m |
+| $\omega$ | Pulsația | rad/s |
+| $k$ | Numărul de undă | m⁻¹ |
+| $\lambda$ | Lungimea de undă | m |
+| $T$ | Perioada | s |
+| $\nu$ | Frecvența | Hz |
+| $v_f$ | Viteza de fază | m/s |
+| $v_g$ | Viteza de grup | m/s |
+| $E$ | Modulul de elasticitate | Pa (Pascal) |
+| $\rho$ | Densitatea | kg/m³ |
+
+"
+"Ecuația undei electromagnetice (deducere, propagare în vid)","## Deducerea Ecuației de Propagare
+
+Plecăm de la ecuațiile Maxwell III și IV.
+
+Aplicăm rotorul ecuației III:
+
+
+$$
+\nabla \times (\nabla \times \vec{E}) = -\frac{\partial}{\partial t}(\nabla \times \vec{B})
+$$
+
+
+Folosind identitatea: $\nabla \times (\nabla \times \vec{E}) = \nabla(\nabla \cdot \vec{E}) - \Delta \vec{E}$
+
+Și înlocuind din ecuația IV ($\nabla \times \vec{H}$):
+
+
+## Ecuația Generală (cu conducție)
+
+
+$$
+\Delta \vec{E} - \mu\varepsilon \frac{\partial^2 \vec{E}}{\partial t^2} - \mu\sigma \frac{\partial \vec{E}}{\partial t} = 0
+$$
+
+
+
+## Propagarea în Vid ($\sigma = 0$)
+
+
+$$
+\Delta \vec{E} - \frac{1}{c^2} \frac{\partial^2 \vec{E}}{\partial t^2} = 0
+$$
+
+
+Viteza luminii în vid:
+
+
+$$
+c = \frac{1}{\sqrt{\varepsilon_0 \mu_0}} \approx 3 \times 10^8 \text{ m/s}
+$$
+
+
+
+## Proprietăți ale Undelor EM
+
+- Unde transversale ($\vec{E} \perp \vec{k}$, $\vec{H} \perp \vec{k}$)
+- $\vec{E} \perp \vec{H}$
+- Se propagă în vid (nu necesită mediu material)
+- Transportă energie și impuls
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $\vec{E}$ | Intensitatea câmpului electric | V/m |
+| $\vec{B}$ | Inducția magnetică | T (Tesla) |
+| $\vec{H}$ | Intensitatea câmpului magnetic | A/m |
+| $c$ | Viteza luminii în vid | m/s |
+| $\varepsilon_0$ | Permitivitatea vidului | F/m |
+| $\mu_0$ | Permeabilitatea vidului | H/m |
+| $\varepsilon$ | Permitivitatea mediului | F/m |
+| $\mu$ | Permeabilitatea mediului | H/m |
+| $\sigma$ | Conductivitatea electrică | S/m |
+| $\vec{k}$ | Vectorul de undă | m⁻¹ |
+
+"
+"Clasificarea undelor electromagnetice","## Spectrul Electromagnetic
+
+În ordinea crescătoare a frecvenței (descrescătoare a lungimii de undă):
+
+1. **Unde radio:** $\lambda > 1$ mm, $\nu < 300$ GHz
+   - Comunicații, radiodifuziune
+
+2. **Microunde:** $\lambda \sim 1$ mm - 1 m
+   - Radar, cuptoare cu microunde, telecomunicații
+
+3. **Infraroșu (IR):** $\lambda \sim 700$ nm - 1 mm
+   - Termal, telecomandă, spectroscopie
+
+4. **Lumină vizibilă:** $\lambda \sim 400 - 700$ nm
+   - Violet (400 nm) → Roșu (700 nm)
+
+5. **Ultraviolet (UV):** $\lambda \sim 10 - 400$ nm
+   - Sterilizare, bronzare
+
+6. **Raze X:** $\lambda \sim 0.01 - 10$ nm
+   - Radiografie, cristalografie
+
+7. **Raze Gamma ($\gamma$):** $\lambda < 0.01$ nm
+   - Radioactivitate, astrofizică
+
+
+## Relația Fundamentală
+
+
+$$
+c = \lambda \nu
+$$
+
+
+
+## Energia Fotonului
+
+
+$$
+E = h\nu = \frac{hc}{\lambda}
+$$
+
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $\lambda$ | Lungimea de undă | m |
+| $\nu$ | Frecvența | Hz |
+| $c$ | Viteza luminii | m/s |
+| $E$ | Energia fotonului | J (Joule) |
+| $h$ | Constanta lui Planck | J·s ($6.626 \times 10^{-34}$) |
+
+"
+"Efectul Doppler (inclusiv demonstrația cu viteze)","## Efectul Doppler pentru Unde Mecanice
+
+Fie o sursă de frecvență $\nu_s$ și un observator. Notăm:
+
+- $v$: viteza de propagare a undei în mediu
+- $v_s$: viteza sursei (pozitivă spre observator)
+- $v_o$: viteza observatorului (pozitivă spre sursă)
+
+**Frecvența observată:**
+
+
+$$
+\nu_o = \nu_s \frac{v + v_o}{v - v_s}
+$$
+
+
+
+## Cazuri Particulare
+
+**1. Sursă în mișcare, observator fix ($v_o = 0$):**
+
+
+$$
+\nu_o = \nu_s \frac{v}{v - v_s}
+$$
+
+
+- $v_s > 0$ (apropiere): $\nu_o > \nu_s$ (frecvență mai mare)
+- $v_s < 0$ (depărtare): $\nu_o < \nu_s$ (frecvență mai mică)
+
+**2. Observator în mișcare, sursă fixă ($v_s = 0$):**
+
+
+$$
+\nu_o = \nu_s \frac{v + v_o}{v}
+$$
+
+
+
+## Efectul Doppler pentru Unde EM
+
+Pentru lumină (relativist, $v_s \ll c$):
+
+
+$$
+\nu_o = \nu_s \sqrt{\frac{1 - v/c}{1 + v/c}} \approx \nu_s \left(1 - \frac{v}{c}\right)
+$$
+
+
+**Deplasare spre roșu (redshift):** sursa se depărtează
+
+**Deplasare spre albastru (blueshift):** sursa se apropie
+
+
+## Aplicații
+
+- Radar (măsurarea vitezei)
+- Astrofizică (viteza stelelor, expansiunea universului)
+- Ecografie Doppler (flux sanguin)
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $\nu_s$ | Frecvența sursei | Hz |
+| $\nu_o$ | Frecvența observată | Hz |
+| $v$ | Viteza undei în mediu | m/s |
+| $v_s$ | Viteza sursei | m/s |
+| $v_o$ | Viteza observatorului | m/s |
+| $c$ | Viteza luminii | m/s |
+
+"
+"Ecuația lui Schrödinger (temporală și atemporală; valori și vectori proprii)","## Ecuația Schrödinger Dependentă de Timp (Temporală)
+
+
+$$
+i\hbar \frac{\partial \Psi}{\partial t} = \hat{H} \Psi
+$$
+
+
+unde $\hat{H} = -\frac{\hbar^2}{2m}\nabla^2 + U(\vec{r}, t)$ este operatorul Hamiltonian.
+
+
+## Ecuația Schrödinger Independentă de Timp (Atemporală)
+
+Pentru stări staționare ($\Psi(\vec{r}, t) = \psi(\vec{r}) e^{-iEt/\hbar}$):
+
+
+$$
+\hat{H} \psi = E \psi
+$$
+
+
+În 1D:
+
+
+$$
+-\frac{\hbar^2}{2m} \frac{d^2\psi}{dx^2} + U(x)\psi = E\psi
+$$
+
+
+
+## Valori Proprii și Vectori Proprii
+
+- **Valorile proprii $E_n$:** Energiile permise ale sistemului (spectru discret sau continuu)
+- **Vectorii proprii $\psi_n$:** Funcțiile de undă corespunzătoare fiecărei energii
+
+
+## Proprietăți
+
+- Funcțiile proprii sunt ortogonale: $\int \psi_m^* \psi_n dx = \delta_{mn}$
+- Formează o bază completă
+- Soluția generală: $\Psi(x,t) = \sum_n c_n \psi_n(x) e^{-iE_n t/\hbar}$
+
+
+## Constanta Planck Redusă
+
+
+$$
+\hbar = \frac{h}{2\pi} \approx 1.055 \times 10^{-34} \text{ J·s}
+$$
+
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $\Psi$ | Funcția de undă (dependentă de timp) | m⁻³/² |
+| $\psi$ | Funcția de undă (staționară) | m⁻³/² |
+| $\hat{H}$ | Operatorul Hamiltonian | J (Joule) |
+| $E$ | Energia | J (Joule) |
+| $E_n$ | Valorile proprii ale energiei | J (Joule) |
+| $\hbar$ | Constanta Planck redusă | J·s |
+| $h$ | Constanta Planck | J·s ($6.626 \times 10^{-34}$) |
+| $m$ | Masa particulei | kg |
+| $U$ | Energia potențială | J (Joule) |
+| $i$ | Unitatea imaginară | adimensional |
+
+"
+"Funcția de undă (semnificație, proprietăți)","## Definiție
+
+Funcția de undă $\Psi(\vec{r}, t)$ este o funcție complexă care descrie complet starea cuantică a unui sistem.
+
+
+## Interpretarea Born (Probabilistică)
+
+Modulul la pătrat al funcției de undă reprezintă densitatea de probabilitate:
+
+
+$$
+dP = |\Psi(\vec{r}, t)|^2 dV = \Psi^* \Psi \, dV
+$$
+
+
+$|\Psi|^2 dV$ = probabilitatea de a găsi particula în volumul $dV$.
+
+
+## Proprietăți Fundamentale
+
+**1. Condiția de normare:**
+
+
+$$
+\int_{-\infty}^{+\infty} |\Psi|^2 dV = 1
+$$
+
+
+**2. Continuitate:** $\Psi$ și $\frac{\partial \Psi}{\partial x}$ trebuie să fie continue.
+
+**3. Mărginire:** $\Psi$ trebuie să fie finită în tot spațiul.
+
+**4. Univalență:** $\Psi$ are o singură valoare în fiecare punct.
+
+
+## Valori Medii (Observabile)
+
+Valoarea medie a unei observabile $\hat{A}$:
+
+
+$$
+\langle A \rangle = \int \Psi^* \hat{A} \Psi \, dV
+$$
+
+
+Exemple:
+
+- Poziție: $\langle x \rangle = \int \Psi^* x \Psi \, dx$
+- Impuls: $\langle p \rangle = \int \Psi^* \left(-i\hbar\frac{\partial}{\partial x}\right) \Psi \, dx$
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $\Psi(\vec{r}, t)$ | Funcția de undă | m⁻³/² |
+| $\Psi^*$ | Conjugata complexă | m⁻³/² |
+| $|\Psi|^2$ | Densitatea de probabilitate | m⁻³ |
+| $dP$ | Probabilitatea elementară | adimensional |
+| $dV$ | Elementul de volum | m³ |
+| $\hat{A}$ | Operator observabilă | depinde de observabilă |
+| $\langle A \rangle$ | Valoarea medie | depinde de observabilă |
+| $\hbar$ | Constanta Planck redusă | J·s |
+
+"
+"Groapa de potențial cu pereți infiniți","## Modelul
+
+Potențialul:
+
+
+$$
+U(x) = \begin{cases} 0, & x \in (0, a) \\ \infty, & x \notin (0, a) \end{cases}
+$$
+
+
+
+## Rezolvare
+
+În exterior: $\psi(x) = 0$ (particula nu poate exista unde $U = \infty$).
+
+În interior ($U = 0$), ecuația Schrödinger:
+
+
+$$
+\frac{d^2\psi}{dx^2} + \frac{2mE}{\hbar^2} \psi = 0
+$$
+
+
+Notăm $k^2 = \frac{2mE}{\hbar^2}$, soluția: $\psi(x) = A \sin(kx) + B \cos(kx)$
+
+
+## Condiții la Frontieră
+
+- $\psi(0) = 0 \Rightarrow B = 0$
+- $\psi(a) = 0 \Rightarrow \sin(ka) = 0 \Rightarrow k_n = \frac{n\pi}{a}$
+
+
+## Cuantificarea Energiei
+
+
+$$
+E_n = \frac{\hbar^2 k_n^2}{2m} = \frac{n^2 \pi^2 \hbar^2}{2m a^2} = \frac{n^2 h^2}{8m a^2}
+$$
+
+
+unde $n = 1, 2, 3, ...$
+
+
+## Funcțiile de Undă Proprii (Normate)
+
+
+$$
+\psi_n(x) = \sqrt{\frac{2}{a}} \sin\left(\frac{n\pi x}{a}\right)
+$$
+
+
+
+## Observații
+
+- Energia minimă $E_1 \neq 0$ (energia de punct zero)
+- Nivelurile sunt echidistante în $n^2$
+- $\psi_n$ are $(n-1)$ noduri în interiorul gropii
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $U(x)$ | Energia potențială | J (Joule) |
+| $a$ | Lățimea gropii | m |
+| $\psi(x)$ | Funcția de undă | m⁻¹/² |
+| $E_n$ | Nivelurile de energie cuantificate | J (Joule) |
+| $k_n$ | Numărul de undă cuantificat | m⁻¹ |
+| $n$ | Numărul cuantic | adimensional |
+| $m$ | Masa particulei | kg |
+| $\hbar$ | Constanta Planck redusă | J·s |
+| $h$ | Constanta Planck | J·s |
+
+"
+"Groapa de potențial cu pereți finiți","## Modelul
+
+
+$$
+U(x) = \begin{cases} U_0, & x < 0 \text{ și } x > a \\ 0, & 0 \le x \le a \end{cases}
+$$
+
+
+unde $U_0$ este finit și $E < U_0$.
+
+
+## Soluții în Cele Trei Regiuni
+
+**Regiunea I ($x < 0$):**
+
+
+$$
+\psi_I(x) = A e^{\kappa x}
+$$
+
+
+(doar termenul care tinde la 0 pentru $x \to -\infty$)
+
+**Regiunea II ($0 < x < a$):**
+
+
+$$
+\psi_{II}(x) = B \sin(kx) + C \cos(kx)
+$$
+
+
+**Regiunea III ($x > a$):**
+
+
+$$
+\psi_{III}(x) = D e^{-\kappa x}
+$$
+
+
+unde:
+
+- $k = \frac{\sqrt{2mE}}{\hbar}$
+- $\kappa = \frac{\sqrt{2m(U_0 - E)}}{\hbar}$
+
+
+## Diferențe față de Groapa Infinită
+
+- Funcția de undă **pătrunde** în barieră (nu este nulă pentru $x < 0$ și $x > a$)
+- Nivelurile de energie sunt **mai joase**
+- Numărul de stări legate este **finit**
+- Condițiile de cuantificare sunt mai complexe (ecuații transcendente)
+
+
+## Penetrarea în Barieră
+
+Lungimea de penetrare:
+
+
+$$
+\delta = \frac{1}{\kappa} = \frac{\hbar}{\sqrt{2m(U_0 - E)}}
+$$
+
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $U_0$ | Înălțimea barierei | J (Joule) |
+| $a$ | Lățimea gropii | m |
+| $E$ | Energia particulei | J (Joule) |
+| $k$ | Numărul de undă în interior | m⁻¹ |
+| $\kappa$ | Constanta de atenuare | m⁻¹ |
+| $\psi$ | Funcția de undă | m⁻¹/² |
+| $\delta$ | Lungimea de penetrare | m |
+| $m$ | Masa particulei | kg |
+| $\hbar$ | Constanta Planck redusă | J·s |
+
+"
+"Bariera de potențial dreptunghiulară","## Modelul
+
+
+$$
+U(x) = \begin{cases} 0, & x < 0 \quad \text{(Regiunea I)} \\ U_0, & 0 \le x \le a \quad \text{(Regiunea II)} \\ 0, & x > a \quad \text{(Regiunea III)} \end{cases}
+$$
+
+
+Considerăm $E < U_0$.
+
+
+## Funcțiile de Undă
+
+**Regiunea I (incidență + reflexie):**
+
+
+$$
+\psi_I(x) = A e^{ikx} + B e^{-ikx}
+$$
+
+
+**Regiunea II (atenuare exponențială):**
+
+
+$$
+\psi_{II}(x) = F e^{-\kappa x} + G e^{\kappa x}
+$$
+
+
+**Regiunea III (transmisie):**
+
+
+$$
+\psi_{III}(x) = C e^{ikx}
+$$
+
+
+unde $k = \frac{\sqrt{2mE}}{\hbar}$, $\kappa = \frac{\sqrt{2m(U_0 - E)}}{\hbar}$
+
+
+## Coeficientul de Transmisie (Transparența)
+
+
+$$
+T = \frac{|C|^2}{|A|^2}
+$$
+
+
+Pentru barieră groasă ($\kappa a \gg 1$):
+
+
+$$
+T \approx T_0 \exp\left(-2\kappa a\right) = T_0 \exp\left( -\frac{2a}{\hbar}\sqrt{2m(U_0 - E)} \right)
+$$
+
+
+
+## Legea de Conservare
+
+
+$$
+R + T = 1
+$$
+
+
+**Clasic:** $T = 0$, $R = 1$ (reflexie totală)
+
+**Cuantic:** $T > 0$ (efect tunel!)
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $U_0$ | Înălțimea barierei | J (Joule) |
+| $a$ | Lățimea barierei | m |
+| $E$ | Energia particulei | J (Joule) |
+| $k$ | Numărul de undă | m⁻¹ |
+| $\kappa$ | Constanta de atenuare | m⁻¹ |
+| $T$ | Coeficientul de transmisie | adimensional |
+| $R$ | Coeficientul de reflexie | adimensional |
+| $m$ | Masa particulei | kg |
+| $\hbar$ | Constanta Planck redusă | J·s |
+
+"
+"Bariera de potențial de formă oarecare","## Aproximația WKB
+
+Pentru o barieră de formă arbitrară $U(x)$, cu $E < U(x)$ între punctele de întoarcere $x_1$ și $x_2$:
+
+
+$$
+T \approx \exp\left[ -\frac{2}{\hbar} \int_{x_1}^{x_2} \sqrt{2m(U(x) - E)} \, dx \right]
+$$
+
+
+
+## Interpretare
+
+- $x_1, x_2$: punctele clasice de întoarcere unde $U(x) = E$
+- Integrala măsoară ""grosimea efectivă"" a barierei
+- Transmisia depinde exponențial de această grosime
+
+
+## Particularizări
+
+**Barieră dreptunghiulară:** $U(x) = U_0 = \text{const}$
+
+
+$$
+T \sim \exp\left(-\frac{2a\sqrt{2m(U_0-E)}}{\hbar}\right)
+$$
+
+
+**Barieră triunghiulară:** $U(x) = U_0 - eFx$
+
+
+$$
+T \sim \exp\left(-\frac{4}{3}\frac{\sqrt{2m}U_0^{3/2}}{eF\hbar}\right)
+$$
+
+
+**Barieră Coulombiană:** $U(r) \sim \frac{1}{r}$ (dezintegrare alfa)
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $T$ | Coeficientul de transmisie | adimensional |
+| $U(x)$ | Potențialul barierei | J (Joule) |
+| $E$ | Energia particulei | J (Joule) |
+| $x_1, x_2$ | Punctele de întoarcere | m |
+| $m$ | Masa particulei | kg |
+| $\hbar$ | Constanta Planck redusă | J·s |
+| $a$ | Lățimea barierei | m |
+| $e$ | Sarcina electronului | C ($1.6 \times 10^{-19}$) |
+| $F$ | Câmpul electric | V/m |
+
+"
+"Efectul Tunel (prin bariere dreptunghiulare sau oarecare)","## Definiție
+
+Efectul tunel este fenomenul cuantic prin care o particulă poate traversa o barieră de potențial chiar dacă energia sa este mai mică decât înălțimea barierei.
+
+
+## Explicație Cuantică
+
+- Funcția de undă nu devine brusc zero la interfața barierei
+- Ea scade exponențial în interiorul barierei
+- Dacă bariera este suficient de subțire, funcția de undă are valoare nenulă pe partea cealaltă
+
+
+## Coeficientul de Transmisie
+
+
+$$
+T \approx \exp\left(-\frac{2}{\hbar}\int_{x_1}^{x_2} \sqrt{2m(U(x)-E)} dx\right)
+$$
+
+
+
+## Factori care Influențează Tunelarea
+
+- **Lărgimea barierei:** $T$ scade exponențial cu $a$
+- **Înălțimea barierei:** $T$ scade cu $(U_0 - E)$
+- **Masa particulei:** $T$ scade cu $\sqrt{m}$
+
+
+## Aplicații
+
+1. **STM (Scanning Tunneling Microscope):** Vizualizare atomică
+2. **Diode tunel:** Rezistență negativă
+3. **Memorii Flash:** Scrierea/ștergerea datelor
+4. **Dezintegrarea alfa:** Radioactivitate
+5. **Fuziune termonucleară:** În stele
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $T$ | Coeficientul de transmisie | adimensional |
+| $U(x)$ | Potențialul barierei | J (Joule) |
+| $E$ | Energia particulei | J (Joule) |
+| $x_1, x_2$ | Punctele clasice de întoarcere | m |
+| $m$ | Masa particulei | kg |
+| $\hbar$ | Constanta Planck redusă | J·s |
+| $a$ | Lățimea barierei | m |
+| $U_0$ | Înălțimea barierei | J (Joule) |
+
+"
+"Emisia Alfa (radioactivitatea alfa explicată prin efect tunel)","## Fenomenul Fizic
+
+Particula $\alpha$ ($_{2}^{4}He$) este preformată în nucleu și trebuie să tuneleze prin bariera Coulombiană pentru a scăpa.
+
+
+## Modelul Gamow
+
+Potențialul:
+
+- Interior ($r < R$): groapa de potențial nuclear (atractiv)
+- Exterior ($r > R$): barieră Coulombiană
+
+
+$$
+U(r) = \frac{1}{4\pi\varepsilon_0} \frac{2(Z-2)e^2}{r}
+$$
+
+
+
+## Transparența Barierei (WKB)
+
+
+$$
+T \approx \exp\left[ -\frac{2\sqrt{2m}}{\hbar} \int_{R}^{r_1} \sqrt{U(r) - E} \, dr \right]
+$$
+
+
+unde $r_1 = R\frac{U_0}{E}$ este punctul de ieșire.
+
+
+## Legea Dezintegrării Radioactive
+
+
+$$
+N(t) = N_0 e^{-\lambda t}
+$$
+
+
+Constanta de dezintegrare: $\lambda \propto T$ (transparența)
+
+
+## Timpul de Înjumătățire
+
+
+$$
+t_{1/2} = \frac{\ln 2}{\lambda}
+$$
+
+
+
+## Legea Geiger-Nuttall
+
+
+$$
+\ln t_{1/2} \propto \frac{1}{\sqrt{E}}
+$$
+
+
+Mici variații în energia $E$ duc la variații enorme în $t_{1/2}$ (23 ordine de mărime!).
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $\alpha$ | Particula alfa ($_{2}^{4}He$) | - |
+| $R$ | Raza nucleului | m |
+| $Z$ | Numărul atomic | adimensional |
+| $e$ | Sarcina elementară | C ($1.6 \times 10^{-19}$) |
+| $U(r)$ | Potențialul Coulombian | J (Joule) |
+| $T$ | Transparența barierei | adimensional |
+| $N(t)$ | Numărul de nuclee la momentul $t$ | adimensional |
+| $\lambda$ | Constanta de dezintegrare | s⁻¹ |
+| $t_{1/2}$ | Timpul de înjumătățire | s |
+| $m$ | Masa particulei alfa | kg |
+| $\hbar$ | Constanta Planck redusă | J·s |
+| $\varepsilon_0$ | Permitivitatea vidului | F/m |
+
+"
+"Autoemisia / Emisia electrică la rece","## Fenomenul
+
+Extragerea electronilor dintr-un metal ""la rece"" (fără încălzire) prin aplicarea unui câmp electric foarte puternic.
+
+
+## Modelul Fizic
+
+- Electronii sunt într-o groapă de potențial (metalul)
+- Lucrul mecanic de extracție: $W$ (tipic 4-5 eV)
+- Câmpul electric extern deformează bariera, făcând-o triunghiulară și finită
+
+
+## Câmpul Caracteristic
+
+
+$$
+F_c \approx \frac{4}{3} \frac{\sqrt{2m}}{e\hbar} W^{3/2}
+$$
+
+
+Pentru $W \approx 4$ eV: $F_c \approx 5.5 \times 10^{10}$ V/m
+
+
+## Dependența Curentului de Câmp (Fowler-Nordheim)
+
+
+$$
+I = I_0 \exp\left(-\frac{F_c}{F}\right)
+$$
+
+
+
+## Realizarea Practică
+
+Câmpuri intense se obțin la vârfuri metalice ascuțite:
+
+
+$$
+F = \frac{V}{R}
+$$
+
+
+Pentru $V = 1000$ V și $R = 100$ nm: $F = 10^{10}$ V/m
+
+
+## Aplicații
+
+- Microscop electronic cu emisie de câmp (FEM)
+- Surse de electroni pentru microscoape electronice
+- Afișaje cu emisie de câmp
+- Memorii Flash
+
+---
+
+
+### Simboluri utilizate
+
+| Simbol | Semnificație | Unitate de măsură (SI) |
+|---|---|---|
+| $W$ | Lucrul mecanic de extracție | eV / J |
+| $F$ | Câmpul electric aplicat | V/m |
+| $F_c$ | Câmpul caracteristic | V/m |
+| $I$ | Curentul de emisie | A (Amper) |
+| $I_0$ | Curentul de referință | A |
+| $m$ | Masa electronului | kg ($9.109 \times 10^{-31}$) |
+| $e$ | Sarcina electronului | C ($1.6 \times 10^{-19}$) |
+| $\hbar$ | Constanta Planck redusă | J·s |
+| $V$ | Tensiunea aplicată | V (Volt) |
+| $R$ | Raza vârfului metalic | m |
+
+"
